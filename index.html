@@ -16,14 +16,17 @@
         <nav>
           <ul>
             <li><a href="#profil">Who am I ?</a></li>
-            <li><a href="#">Studies & Experience</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#studies">Studies & Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </aside>
       <figure>
-        <img src="" alt="Aurélien's profil picture" />
+        <img
+          src="./assets/img/profilPic.webp"
+          alt="Aurélien's profil picture"
+        />
       </figure>
     </main>
 
@@ -90,9 +93,57 @@
 
     <section id="projects">
       <h2>My personnal projects</h2>
-      <div class="zenifine"></div>
-      <h3>Zenifine</h3>
-      <h4>Presentation of wellness massages</h4>
+      <div class="slideshow">
+        <ul class="slides">
+          <li class="slide is-active">
+            <div
+              class="cover"
+              style="background-image: url(./assets/img/zenifine.webp)"
+            ></div>
+          </li>
+          <li class="slide">
+            <div
+              class="cover"
+              style="background-image: url(./assets/img/game.webp)"
+            ></div>
+          </li>
+          <li class="slide">
+            <div
+              class="cover"
+              style="background-image: url(./assets/img/tattoo.webp)"
+            ></div>
+          </li>
+        </ul>
+        <div class="arrows">
+          <button class="arrow arrow-prev">
+            <span></span>
+          </button>
+          <button class="arrow arrow-next">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+
+    <section id="contact">
+      <h2>Contact me</h2>
+      <div class="instaCard">
+        <button>
+          <a href="https://www.instagram.com/cursed_aure/" target="_blank"
+            >Follow me</a
+          >
+        </button>
+      </div>
+      <div class="mailCard">
+        <button>
+          <a href="mailto:aurelien..corre@outlook.fr">Email me</a>
+        </button>
+      </div>
+      <div class="phoneCard">
+        <button><a href="tel:+33659920450">Call me</a></button>
+      </div>
     </section>
   </body>
 </html>
