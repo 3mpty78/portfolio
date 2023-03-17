@@ -1,2 +1,160 @@
+/* Imports */
+
 @import "./normalize.css";
 @import "./variables.css";
+
+@font-face {
+  font-family: rantera;
+  src: url(../assets/fonts/Rantera.otf);
+  font-family: candara;
+  src: url(../assets/fonts/CANDARA.TTF);
+}
+
+/* Home style */
+* {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background: var(--background);
+  color: var(--white);
+  font-family: rantera;
+}
+main {
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.bounce {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.bounce div {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  border: 2px solid var(--grey);
+}
+.rebond_1 {
+  width: 5em;
+  height: 5em;
+  top: 53em;
+  left: 40%;
+  transition: 0.6s;
+  animation: bounce 20s infinite ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    left: 40%;
+    top: 53em;
+  }
+  25% {
+    left: 95%;
+    top: 30em;
+  }
+  50% {
+    left: 25%;
+    top: 0;
+  }
+  75% {
+    left: 0;
+    top: 40em;
+  }
+  100% {
+    left: 40%;
+    top: 53em;
+  }
+}
+.rebond_2 {
+  width: 50em;
+  height: 50em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rebond_3 {
+  width: 25em;
+  height: 25em;
+  left: 55%;
+  top: 0;
+  animation: bounce_2 15s infinite ease-in-out;
+}
+@keyframes bounce_2 {
+  0% {
+    left: 55%;
+    top: 0;
+  }
+  25% {
+    left: 0;
+    top: 30em;
+  }
+  50% {
+    left: 10%;
+    top: 32em;
+  }
+  75% {
+    left: 70%;
+    top: 10em;
+  }
+  100% {
+    left: 55%;
+    top: 0;
+  }
+}
+h1 {
+  font-size: 11em;
+  height: fit-content;
+  margin: auto 2%;
+  font-weight: lighter;
+  width: 40%;
+  color: var(--white);
+  z-index: 1;
+}
+h1 span {
+  margin-left: 1em;
+}
+aside {
+  text-align: end;
+  width: 50%;
+  z-index: 2;
+}
+aside nav {
+  height: 100%;
+}
+aside ul {
+  margin: 0;
+  padding: 0 2em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  height: 100%;
+}
+aside li {
+  list-style-type: none;
+}
+aside a {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: var(--grey);
+  transition: 0.4s ease;
+}
+aside a:hover {
+  color: var(--white);
+  font-size: 2.6em;
+  margin-right: 1em;
+}
+.profilPic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 60%;
+  background: url(../assets/img/profilPic.webp) no-repeat center/cover;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
