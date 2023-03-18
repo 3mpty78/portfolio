@@ -1,0 +1,102 @@
+#skills {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#english,
+#html,
+#css,
+#javascript,
+#git {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 0 1em;
+  width: 60%;
+  height: 6em;
+  transition: 0.6s;
+  border: 2px solid var(--grey);
+  border-radius: 15px;
+  background: var(--background);
+}
+#skills h3 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: var(--grey);
+  transition: 0.4s;
+}
+#skills div:hover h3 {
+  color: var(--yellow);
+}
+.jauge_english,
+.jauge_html,
+.jauge_css,
+.jauge_javascript,
+.jauge_git {
+  width: 0;
+  height: 2px;
+  background: var(--yellow);
+  transition: 0.6s ease-in-out;
+}
+#english:hover .jauge_english {
+  width: 70%;
+}
+#html:hover .jauge_html {
+  width: 80%;
+}
+#css:hover .jauge_css {
+  width: 60%;
+}
+#javascript:hover .jauge_javascript {
+  width: 20%;
+}
+#git:hover .jauge_git {
+  width: 30%;
+}
+.test {
+  position: absolute;
+  border: 2px solid var(--grey);
+  width: 600px;
+  height: 600px;
+  border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+  opacity: 0.1;
+  animation: strange_1 10s linear infinite;
+  z-index: -1;
+}
+@keyframes strange_1 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.test_2 {
+  position: absolute;
+  border: 2px solid var(--grey);
+  width: 600px;
+  height: 600px;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  opacity: 0.1;
+  animation: strange_2 14s linear infinite;
+  z-index: -1;
+}
+@keyframes strange_2 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.test_3 {
+  position: absolute;
+  border: 2px solid var(--grey);
+  width: 600px;
+  height: 600px;
+  border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+  opacity: 0.1;
+  animation: strange_3 10s linear infinite;
+  z-index: -1;
+}
+@keyframes strange_3 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
