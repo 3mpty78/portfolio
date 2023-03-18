@@ -56,16 +56,6 @@
   border: 2px solid var(--grey);
   border-radius: 50%;
 }
-#profil h2 {
-  width: 90%;
-  height: fit-content;
-  text-align: center;
-  font-weight: bold;
-  font-size: 4em;
-  color: var(--yellow);
-  margin: 0;
-  padding: 0;
-}
 .picture_container {
   width: 25%;
   height: 60%;

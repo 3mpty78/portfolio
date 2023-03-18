@@ -3,6 +3,7 @@
 @import "./normalize.css";
 @import "./variables.css";
 @import "./about.css";
+@import "./experience.css";
 
 @font-face {
   font-family: rantera;
@@ -14,6 +15,7 @@
 /* Home style */
 * {
   scroll-behavior: smooth;
+  user-select: none;
 }
 body {
   margin: 0;
@@ -117,6 +119,16 @@ h1 {
 }
 h1 span {
   margin-left: 1em;
+}
+h2 {
+  width: 90%;
+  height: fit-content;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4em;
+  color: var(--yellow);
+  margin: 0;
+  padding: 0;
 }
 aside {
   text-align: end;
