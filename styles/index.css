@@ -2,6 +2,7 @@
 
 @import "./normalize.css";
 @import "./variables.css";
+@import "./about.css";
 
 @font-face {
   font-family: rantera;
