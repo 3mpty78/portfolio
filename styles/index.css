@@ -1,10 +1,12 @@
 /* Imports */
 
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import "./normalize.css";
 @import "./variables.css";
 @import "./about.css";
 @import "./experience.css";
 @import "./skills.css";
+@import "./projects.css";
 
 @font-face {
   font-family: rantera;

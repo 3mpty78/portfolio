@@ -55,7 +55,7 @@
 #git:hover .jauge_git {
   width: 30%;
 }
-.test {
+.circle {
   position: absolute;
   border: 2px solid var(--grey);
   width: 600px;
@@ -70,7 +70,7 @@
     transform: rotate(360deg);
   }
 }
-.test_2 {
+.circle_2 {
   position: absolute;
   border: 2px solid var(--grey);
   width: 600px;
@@ -85,7 +85,7 @@
     transform: rotate(360deg);
   }
 }
-.test_3 {
+.circle_3 {
   position: absolute;
   border: 2px solid var(--grey);
   width: 600px;
