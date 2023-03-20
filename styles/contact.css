@@ -28,15 +28,15 @@
   font-size: 2em;
   text-decoration: none;
   padding: 0.5em;
-  backdrop-filter: hue-rotate(30deg);
+  background: transparent;
   border: 2px solid var(--white);
   border-radius: 15px;
   transition: all 0.4s;
 }
 .insta a:hover {
-  backdrop-filter: none;
   background: var(--white);
   color: var(--background);
+  border: 2px solid var(--background);
 }
 .insta {
   background: linear-gradient(
@@ -96,16 +96,21 @@
   align-items: center;
 }
 .slide a {
-  color: var(--background);
+  color: var(--white);
   width: 5em;
   text-align: center;
   font-size: 1.5em;
   text-decoration: none;
   padding: 0.5em;
-  background: var(--white);
-  border: 2px solid var(--background);
+  background: transparent;
+  border: 2px solid var(--white);
   border-radius: 15px;
   transition: all 0.4s;
+}
+.slide a:hover {
+  background: var(--white);
+  color: var(--background);
+  border: 2px solid var(--background);
 }
 .slide i {
   width: 6em;
@@ -173,7 +178,6 @@
 }
 .slide-toggle {
   margin: 1em;
-  cursor: pointer;
   width: 2em;
   height: 2em;
   background: url(../assets/img/icons/arrow.png) no-repeat center/cover;

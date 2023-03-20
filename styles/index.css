@@ -16,6 +16,18 @@
   src: url(../assets/fonts/CANDARA.TTF);
 }
 
+/* Cursor style */
+
+#pointed {
+  position: absolute;
+  z-index: 20;
+  width: 1em;
+  height: 1em;
+  background: var(--background);
+  border: 2px solid var(--yellow);
+  border-radius: 50%;
+}
+
 /* Home style */
 * {
   scroll-behavior: smooth;
@@ -28,6 +40,10 @@ body {
   background: var(--background);
   color: var(--white);
   font-family: rantera;
+  cursor: none;
+}
+a:hover {
+  cursor: none;
 }
 main {
   height: 100vh;
@@ -163,6 +179,7 @@ aside a:hover {
   color: var(--white);
   font-size: 2.6em;
   margin-right: 1em;
+  cursor: none;
 }
 .profilPic {
   position: absolute;

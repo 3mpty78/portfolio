@@ -1,3 +1,18 @@
+// Cursor script
+
+const pointed = document.getElementById("pointed");
+
+const moveCursor = (e) => {
+  const mouseY = e.pageY;
+  const mouseX = e.pageX;
+
+  pointed.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+};
+
+window.addEventListener("mousemove", moveCursor);
+
+// Sliders script
+
 const slider = document.querySelector(".slider");
 const leftArrow = document.querySelector(".left");
 const rightArrow = document.querySelector(".right");

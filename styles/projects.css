@@ -85,7 +85,6 @@
 }
 .controls .arrow {
   margin: 0 2%;
-  cursor: pointer;
 }
 .controls .left {
   background: url(../assets/img/icons/chevron.png) no-repeat center/cover;
