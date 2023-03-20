@@ -58,8 +58,8 @@
 .circle {
   position: absolute;
   border: 2px solid var(--grey);
-  width: 600px;
-  height: 600px;
+  width: 35vw;
+  height: 35vw;
   border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
   opacity: 0.1;
   animation: strange_1 10s linear infinite;
@@ -73,8 +73,8 @@
 .circle_2 {
   position: absolute;
   border: 2px solid var(--grey);
-  width: 600px;
-  height: 600px;
+  width: 35vw;
+  height: 35vw;
   border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
   opacity: 0.1;
   animation: strange_2 14s linear infinite;
@@ -88,8 +88,8 @@
 .circle_3 {
   position: absolute;
   border: 2px solid var(--grey);
-  width: 600px;
-  height: 600px;
+  width: 35vw;
+  height: 35vw;
   border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
   opacity: 0.1;
   animation: strange_3 10s linear infinite;
@@ -98,5 +98,24 @@
 @keyframes strange_3 {
   100% {
     transform: rotate(-360deg);
+  }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1400px) {
+  .circle,
+  .circle_2,
+  .circle_3 {
+    width: 30em;
+    height: 30em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .circle,
+  .circle_2,
+  .circle_3 {
+    width: 20em;
+    height: 20em;
   }
 }
