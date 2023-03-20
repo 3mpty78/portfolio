@@ -129,7 +129,7 @@ main {
   }
 }
 h1 {
-  font-size: 11em;
+  font-size: 11vw;
   height: fit-content;
   margin: auto 2%;
   font-weight: lighter;
