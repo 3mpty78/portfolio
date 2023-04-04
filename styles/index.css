@@ -1,6 +1,9 @@
 /* Imports */
 
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
 @import "./normalize.css";
 @import "./variables.css";
 @import "./about.css";
@@ -14,6 +17,7 @@
   src: url(../assets/fonts/Rantera.otf);
   font-family: candara;
   src: url(../assets/fonts/CANDARA.TTF);
+  font-family: "Poiret One", cursive;
 }
 
 /* Cursor style */
@@ -38,8 +42,9 @@ body {
   padding: 0;
   height: auto;
   background: var(--background);
+  font-family: "Poiret One", cursive;
+  font-weight: lighter;
   color: var(--white);
-  font-family: rantera;
   cursor: none;
   overflow-x: hidden;
 }
