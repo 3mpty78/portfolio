@@ -118,4 +118,19 @@
     width: 20em;
     height: 20em;
   }
+  #english .jauge_english {
+    width: 70%;
+  }
+  #html .jauge_html {
+    width: 80%;
+  }
+  #css .jauge_css {
+    width: 60%;
+  }
+  #javascript .jauge_javascript {
+    width: 20%;
+  }
+  #git .jauge_git {
+    width: 30%;
+  }
 }
