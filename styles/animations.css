@@ -1,0 +1,115 @@
+
+/* INDEX.CSS*/
+
+@keyframes bounce {
+  0% {
+    left: 40%;
+    top: 53em;
+  }
+  25% {
+    left: 95%;
+    top: 30em;
+  }
+  50% {
+    left: 25%;
+    top: 0;
+  }
+  75% {
+    left: 0;
+    top: 40em;
+  }
+  100% {
+    left: 40%;
+    top: 53em;
+  }
+}
+
+@keyframes bounce_2 {
+    0% {
+      left: 55%;
+      top: 0;
+    }
+    25% {
+      left: 0;
+      top: 30em;
+    }
+    50% {
+      left: 10%;
+      top: 32em;
+    }
+    75% {
+      left: 70%;
+      top: 10em;
+    }
+    100% {
+      left: 55%;
+      top: 0;
+    }
+  }
+
+  /* ABOUT.CSS */
+
+
+@keyframes rotate {
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+@keyframes rotate_2 {
+    50% {
+      transform: rotate(-180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* EXPERIENCE.CSS */
+
+
+@keyframes shadow {
+    0% {
+      box-shadow: 0 0 15px var(--grey);
+    }
+    50% {
+      box-shadow: 0 0 0 var(--grey);
+    }
+    100% {
+      box-shadow: 0 0 15px var(--grey);
+    }
+  }
+
+  /* PROJECTS.CSS */
+
+
+@keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* SKILLS.CSS */
+
+
+@keyframes strange_1 {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+@keyframes strange_2 {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+@keyframes strange_3 {
+    100% {
+      transform: rotate(-360deg);
+    }
+  }

@@ -11,6 +11,11 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* Sections
@@ -22,6 +27,8 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /**
@@ -30,6 +37,8 @@ body {
 
 main {
   display: block;
+  overflow-x: hidden;
+  
 }
 
 /**

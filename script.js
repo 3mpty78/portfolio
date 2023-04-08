@@ -39,3 +39,7 @@ next.addEventListener("click", () => {
   index = index < 3 ? index + 1 : 0;
   carousel.style.transform = "translateY(" + index * -25 + "%)";
 });
+
+// Style for overflow
+
+oDomElement.style.overflowY = "hidden";

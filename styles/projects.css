@@ -1,9 +1,10 @@
 #projects {
-  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
+  width: 80%;
+  height: 100vh;
 }
 #projects a {
   width: 6em;
@@ -126,29 +127,18 @@
   animation: 2s rotate linear infinite;
 }
 
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /* Responsive */
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 950px) {
+
   .text-container {
     height: 60%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .text-container {
-    height: 40%;
   }
   .eclipse {
     width: 20em;
     height: 20em;
   }
-}
-@media screen and (max-width: 800px) {
   #projects h3 {
     font-size: 6vw;
   }
@@ -157,9 +147,6 @@
   }
   #projects a {
     font-size: 3vw;
-  }
-  .text-container {
-    width: 100%;
   }
   #projects .slider section {
     flex-flow: column nowrap;
