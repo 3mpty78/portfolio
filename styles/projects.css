@@ -24,6 +24,17 @@
 #projects a:hover {
   background: var(--yellow);
   color: var(--background);
+}
+.zenifine a:hover {
+  cursor: not-allowed;
+}
+.game a:hover {
+  cursor: none;
+}
+.tattoo a:hover {
+  cursor: not-allowed;
+}
+.taxis a:hover {
   cursor: not-allowed;
 }
 #projects h2 {

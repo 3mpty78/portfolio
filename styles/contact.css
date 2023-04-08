@@ -5,6 +5,9 @@
   width: 80%;
   height: 100vh;
 }
+#contact a:hover {
+  cursor: none;
+}
 #contact h2 {
   width: 100%;
   margin: 2% auto;
@@ -232,7 +235,7 @@
     width: 5em;
     height: 5em;
   }
-.slide-toggle-container {
-  width: 16%;
-}
+  .slide-toggle-container {
+    width: 16%;
+  }
 }
