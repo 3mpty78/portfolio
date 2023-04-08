@@ -16,41 +16,44 @@
   src: url(../assets/fonts/CANDARA.TTF);
 }
 @font-face {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url(../assets/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  src: url(../assets/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Poiret One';
+  font-family: "Poiret One";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../assets/fonts/UqyVK80NJXN4zfRgbdfbo5pcV_cx.woff2) format('woff2');
+  src: url(../assets/fonts/UqyVK80NJXN4zfRgbdfbo5pcV_cx.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Poiret One';
+  font-family: "Poiret One";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../assets/fonts/UqyVK80NJXN4zfRgbdfbo5BcV_cx.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(../assets/fonts/UqyVK80NJXN4zfRgbdfbo5BcV_cx.woff2) format("woff2");
+  unicode-range: U+0100-02AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF,
+    U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Poiret One';
+  font-family: "Poiret One";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../assets/fonts/UqyVK80NJXN4zfRgbdfbo55cVw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(../assets/fonts/UqyVK80NJXN4zfRgbdfbo55cVw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -61,11 +64,9 @@
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  -moz-font-feature-settings: 'liga';
+  -moz-font-feature-settings: "liga";
   -moz-osx-font-smoothing: grayscale;
 }
-
-
 
 /* Cursor style */
 
@@ -96,9 +97,6 @@ main {
   align-items: center;
   width: 98%;
   height: auto;
-}
-a:hover {
-  cursor: none;
 }
 #menu {
   height: 100vh;
@@ -191,7 +189,7 @@ aside a {
 }
 aside a:hover {
   color: var(--white);
-  font-size: 2.6vw;
+  font-size: 2vw;
   margin-right: 1em;
   cursor: none;
 }
@@ -211,15 +209,15 @@ aside a:hover {
 
 @media screen and (max-width: 950px) {
   main {
-  padding-bottom: 10em;
+    padding-bottom: 10em;
   }
-aside {
-  text-justify: end;
-  text-align: end;
-  width: 50%;
-  height: 50%;
-  z-index: 2;
-}
+  aside {
+    text-justify: end;
+    text-align: end;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+  }
   h1,
   aside {
     width: 100%;
