@@ -103,7 +103,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: space-around;
 }
 .bounce {
   position: absolute;
@@ -189,7 +189,7 @@ aside a {
 }
 aside a:hover {
   color: var(--white);
-  font-size: 2vw;
+  font-size: 250%;
   margin-right: 1em;
   cursor: none;
 }
@@ -212,11 +212,17 @@ aside a:hover {
     padding-bottom: 10em;
   }
   aside {
+    align-self: flex-end;
+    justify-self: flex-end;
     text-justify: end;
     text-align: end;
     width: 50%;
     height: 50%;
     z-index: 2;
+  }
+  li>a {
+    background-color: #111414;
+    border-radius: 50px;
   }
   h1,
   aside {
