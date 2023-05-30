@@ -6,9 +6,6 @@
   width: 80%;
   height: 100vh;
 }
-#contact a:hover {
-  cursor: none;
-}
 #contact h2 {
   width: 100%;
   margin: 2% auto;
@@ -187,6 +184,7 @@
   height: 2em;
   background: url(../assets/img/icons/arrow.png) no-repeat center/cover;
   filter: invert(1);
+  cursor: pointer;
 }
 .prev {
   transform: rotate(180deg);
@@ -206,7 +204,7 @@
     height: 60%;
     width: 90%;
     flex-flow: row wrap;
-    gap: .8em;
+    gap: 0.8em;
     margin: 5%;
   }
   .cards i {

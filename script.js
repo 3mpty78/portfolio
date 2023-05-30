@@ -16,9 +16,12 @@ window.addEventListener("mousemove", moveCursor);
 const slider = document.querySelector(".slider");
 const leftArrow = document.querySelector(".left");
 const rightArrow = document.querySelector(".right");
+
 const carousel = document.querySelector(".contact");
 const previous = document.querySelector(".prev");
 const next = document.querySelector(".next");
+
+const body = document.querySelector(".slide");
 
 let index = 0;
 
@@ -38,6 +41,9 @@ previous.addEventListener("click", () => {
 next.addEventListener("click", () => {
   index = index < 3 ? index + 1 : 0;
   carousel.style.transform = "translateY(" + index * -25 + "%)";
+});
+body.addEventListener("click", () => {
+  console.log("ça click");
 });
 
 // Style for overflow

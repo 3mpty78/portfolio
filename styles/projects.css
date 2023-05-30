@@ -1,12 +1,131 @@
 #projects {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
-  width: 80%;
+  width: 100%;
   height: 100vh;
 }
-#projects a {
+#projects .leftSide {
+  width: 50%;
+  height: 75%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+}
+#projects .leftSide .mockup_picture_container {
+  width: 300%;
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+}
+#projects .first_mockup,
+#projects .second_mockup,
+#projects .third_mockup {
+  width: 33.33%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+}
+.first_mockup {
+  background: url(../assets/img/baudic.png) no-repeat;
+}
+.second_mockup {
+  background: url(../assets/img/tattoo_mockup.png) no-repeat;
+}
+.third_mockup {
+  background: url(../assets/img/game_mockup.png) no-repeat;
+}
+#projects .mockup_description_container {
+  display: flex;
+  flex-direction: row;
+  width: 300%;
+  height: 30%;
+}
+.first_description,
+.second_description,
+.third_description {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+#projects h3 {
+  font-size: 2vw;
+  font-weight: lighter;
+}
+#projects .leftSide a {
+  font-size: 25px;
+  color: var(--grey);
+  text-decoration: none;
+  transition: 0.4s;
+}
+#projects .leftSide a:hover {
+  transform: scale(1.05);
+  color: var(--yellow);
+}
+#projects .rightSide {
+  width: 40%;
+  height: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+}
+.first_project,
+.second_project,
+.third_project {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--darkBrown);
+  backdrop-filter: blur(10px) brightness(1.1);
+  transition: 0.4s;
+}
+.first_project:hover,
+.second_project:hover,
+.third_project:hover {
+  box-shadow: 0 0 10px var(--yellow);
+  cursor: pointer;
+  transform: translateX(-20px);
+}
+
+/* Circles animation */
+
+.circle {
+  position: absolute;
+  border: 2px solid var(--yellow);
+  width: 35vw;
+  height: 35vw;
+  border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+  opacity: 0.1;
+  animation: strange_1 10s linear infinite;
+  z-index: -1;
+}
+.circle_2 {
+  position: absolute;
+  border: 2px solid var(--yellow);
+  width: 35vw;
+  height: 35vw;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  opacity: 0.1;
+  animation: strange_2 14s linear infinite;
+  z-index: -1;
+}
+.circle_3 {
+  position: absolute;
+  border: 2px solid var(--yellow);
+  width: 35vw;
+  height: 35vw;
+  border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+  opacity: 0.1;
+  animation: strange_3 10s linear infinite;
+  z-index: -1;
+}
+/* #projects a {
   width: 6em;
   margin: 0;
   padding: 1em;
@@ -31,24 +150,12 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-}
-.zenifine a:hover {
-  cursor: not-allowed;
-}
-.game a:hover {
-  cursor: none;
-}
-.tattoo a:hover {
-  cursor: not-allowed;
-}
-.taxis a:hover {
-  cursor: none;
-}
+} */
 #projects h2 {
   margin: 2% auto;
   z-index: 3;
 }
-#projects .container {
+/* #projects .container {
   width: 80%;
   height: fit-content;
   z-index: 2;
@@ -122,7 +229,7 @@
   filter: invert(1);
   height: 3em;
   width: 3em;
-}
+} */
 
 /* Eclipse style */
 

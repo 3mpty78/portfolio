@@ -3,7 +3,7 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
-  width: 80%; 
+  width: 80%;
   height: 100vh;
 }
 #english,
@@ -56,6 +56,9 @@
 #git:hover .jauge_git {
   width: 30%;
 }
+
+/* Circles animation */
+
 .circle {
   position: absolute;
   border: 2px solid var(--yellow);
