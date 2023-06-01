@@ -6,91 +6,75 @@
   width: 100%;
   height: 100vh;
 }
-#projects .leftSide {
-  width: 50%;
-  height: 75%;
-  overflow: hidden;
-  display: flex;
-  flex-flow: column nowrap;
+.gallery-container {
+  width: 100vw;
+  height: 80vh;
 }
-#projects .leftSide .mockup_picture_container {
-  width: 300%;
-  height: 65%;
-  display: flex;
-  flex-direction: row;
-}
-#projects .first_mockup,
-#projects .second_mockup,
-#projects .third_mockup {
-  width: 33.33%;
-  height: 100%;
-  background-size: contain;
-  background-position: center;
-}
-.first_mockup {
-  background: url(../assets/img/baudic.png) no-repeat;
-}
-.second_mockup {
-  background: url(../assets/img/tattoo_mockup.png) no-repeat;
-}
-.third_mockup {
-  background: url(../assets/img/game_mockup.png) no-repeat;
-}
-#projects .mockup_description_container {
-  display: flex;
-  flex-direction: row;
-  width: 300%;
-  height: 30%;
-}
-.first_description,
-.second_description,
-.third_description {
-  width: 33.33%;
+.gallery {
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-flow: column nowrap;
-}
-#projects h3 {
-  font-size: 2vw;
-  font-weight: lighter;
-}
-#projects .leftSide a {
-  font-size: 25px;
-  color: var(--grey);
-  text-decoration: none;
-  transition: 0.4s;
-}
-#projects .leftSide a:hover {
-  transform: scale(1.05);
-  color: var(--yellow);
-}
-#projects .rightSide {
-  width: 40%;
-  height: 75%;
-  display: flex;
   justify-content: space-evenly;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
+  overflow-y: hidden;
 }
-.first_project,
-.second_project,
-.third_project {
-  height: 20%;
+.snippet-container {
+  height: 200%;
+  width: 33.33%;
+  transition: cubic-bezier(0.79, 0.14, 0.15, 0.86) 0.8s;
+}
+.first-snippet-img {
+  width: 100%;
+  height: 50%;
+  background: url(../assets/img/taxis.webp) no-repeat bottom/cover;
+}
+.second-snippet-img {
+  width: 100%;
+  height: 50%;
+  background: url(../assets/img/robot_2.png) no-repeat bottom/cover;
+}
+.third-snippet-img {
+  width: 100%;
+  height: 50%;
+  background: url(../assets/img/roulette.webp) no-repeat bottom/cover;
+}
+.first-snippet-text,
+.second-snippet-text,
+.third-snippet-text {
+  width: 100%;
+  height: 50%;
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px var(--darkBrown);
-  backdrop-filter: blur(10px) brightness(1.1);
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+.snippet-container h2 {
+  font-size: 2.2em;
+  font-weight: 300;
+}
+#projects h4 {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+#projects h6 {
+  font-size: 1em;
+  font-weight: 300;
+}
+.line1 .snippet-container:hover {
+  transform: translateY(-50%);
+}
+#projects a {
+  text-decoration: none;
+  color: var(--yellow);
   transition: 0.4s;
 }
-.first_project:hover,
-.second_project:hover,
-.third_project:hover {
-  box-shadow: 0 0 10px var(--yellow);
-  cursor: pointer;
-  transform: translateX(-20px);
+#projects a:hover {
+  transform: scale(1.05);
+  border-bottom: 1px solid var(--yellow);
+}
+.third-snippet-text a:hover {
+  cursor: not-allowed;
 }
 
 /* Circles animation */
