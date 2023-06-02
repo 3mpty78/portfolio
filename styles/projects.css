@@ -52,8 +52,8 @@
 .react,
 .node,
 .discord {
-  width: 6em;
-  height: 6em;
+  width: 4em;
+  height: 4em;
   border-radius: 50%;
 }
 .html {
@@ -146,6 +146,7 @@
 }
 #projects a {
   text-decoration: none;
+  font-size: 1.2em;
   color: var(--orange);
   transition: 0.4s;
 }

@@ -1,11 +1,16 @@
 #experience {
+  width: 100%;
   height: auto;
   padding: 2% 0;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
 }
+
+/* Style progress bar */
+
+/* Style cards */
+
 .card {
   width: 40vw;
   background: var(--background);
@@ -26,10 +31,19 @@
 .card:nth-child(5) {
   margin-left: -30em;
 }
+.card:nth-child(3):hover,
+.card:nth-child(5):hover {
+  margin-left: -25em;
+}
 .card:nth-child(2),
 .card:nth-child(4),
 .card:nth-child(6) {
   margin-right: -30em;
+}
+.card:nth-child(2):hover,
+.card:nth-child(4):hover,
+.card:nth-child(6):hover {
+  margin-right: -25em;
 }
 #experience img {
   width: 5vw;

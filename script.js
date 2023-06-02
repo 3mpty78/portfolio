@@ -34,23 +34,6 @@ next.addEventListener("click", () => {
   carousel.style.transform = "translateY(" + index * -25 + "%)";
 });
 
-firstProject.addEventListener("click", () => {
-  index = index > 0 ? index - 1 : 2;
-  slides.style.transform = "translate(" + index * -33.33 + "%)";
-  textSlides.style.transform = "translate(" + index * -33.33 + "%)";
-});
-secondProject.addEventListener("click", () => {
-  if (index > 0 && index < 2) {
-    index = 2;
-    slides.style.transform = "translate(" + index * -33.33 + "%)";
-    textSlides.style.transform = "translate(" + index * -33.33 + "%)";
-  }
-});
-thirdProject.addEventListener("click", () => {
-  index = index > 0 ? index - 1 : 2;
-  slides.style.transform = "translate(" + index * -33.33 + "%)";
-  textSlides.style.transform = "translate(" + index * -33.33 + "%)";
-});
-// Style for overflow
+// Style for progress bar
 
 // oDomElement.style.overflowY = "hidden";
