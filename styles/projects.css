@@ -4,46 +4,121 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  background: var(--white);
+}
+#projects h2 {
+  color: var(--darkBrown);
 }
 .gallery-container {
   width: 100vw;
-  height: 80vh;
+  height: auto;
 }
 .gallery {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   overflow-y: hidden;
 }
+.secondContainer {
+  height: 60vh;
+  width: 100%;
+  margin: 2% 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+  border-radius: 15px;
+}
+.tech_container {
+  width: 30%;
+  height: 100%;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.blankspace {
+  width: 30%;
+  height: 100%;
+}
+.html,
+.css,
+.js,
+.react,
+.node,
+.discord {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+}
+.html {
+  background: url(../assets/img/icons/html.png) no-repeat center/contain;
+}
+.css {
+  background: url(../assets/img/icons/css-3.png) no-repeat center/contain;
+}
+.js {
+  background: url(../assets/img/icons/js.png) no-repeat center/contain;
+}
+.react {
+  background: url(../assets/img/icons/react.png) no-repeat center/contain;
+}
+.node {
+  background: url(../assets/img/icons/nodejs.png) no-repeat center/contain;
+}
+.discord {
+  background: url(../assets/img/icons/discordjs.png) no-repeat center/contain;
+}
 .snippet-container {
-  height: 200%;
-  width: 33.33%;
+  height: 100%;
+  width: 60%;
+  cursor: pointer;
+  margin-right: 2%;
   transition: cubic-bezier(0.79, 0.14, 0.15, 0.86) 0.8s;
 }
 .first-snippet-img {
   width: 100%;
-  height: 50%;
-  background: url(../assets/img/taxis.webp) no-repeat bottom/cover;
+  height: 100%;
+  border-radius: 15px;
+  background: url(../assets/img/taxi.webp) no-repeat center/cover;
+  display: flex;
+  align-items: flex-end;
 }
 .second-snippet-img {
   width: 100%;
-  height: 50%;
-  background: url(../assets/img/robot_2.png) no-repeat bottom/cover;
+  height: 100%;
+  border-radius: 15px;
+  background: url(../assets/img/robot.webp) no-repeat center/cover;
+  display: flex;
+  align-items: flex-end;
 }
 .third-snippet-img {
   width: 100%;
-  height: 50%;
-  background: url(../assets/img/roulette.webp) no-repeat bottom/cover;
+  height: 100%;
+  border-radius: 15px;
+  background: url(../assets/img/tattoo.webp) no-repeat center/cover;
+  display: flex;
+  align-items: flex-end;
+}
+.first-snippet-img h3,
+.second-snippet-img h3,
+.third-snippet-img h3 {
+  color: var(--white);
+  font-weight: lighter;
+  margin: 50px;
+  font-size: 2vw;
 }
 .first-snippet-text,
 .second-snippet-text,
 .third-snippet-text {
   width: 100%;
-  height: 50%;
+  height: 100%;
+  color: var(--darkBrown);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,24 +129,29 @@
   font-weight: 300;
 }
 #projects h4 {
+  width: 50%;
+  text-align: center;
   font-size: 1.8em;
   font-weight: 300;
+}
+#projects h4 span {
+  color: var(--orange);
 }
 #projects h6 {
   font-size: 1em;
   font-weight: 300;
 }
 .line1 .snippet-container:hover {
-  transform: translateY(-50%);
+  transform: translateY(-100%);
 }
 #projects a {
   text-decoration: none;
-  color: var(--yellow);
+  color: var(--orange);
   transition: 0.4s;
 }
 #projects a:hover {
   transform: scale(1.05);
-  border-bottom: 1px solid var(--yellow);
+  border-bottom: 1px solid var(--orange);
 }
 .third-snippet-text a:hover {
   cursor: not-allowed;
@@ -135,10 +215,7 @@
   justify-content: space-between;
   width: 100%;
 } */
-#projects h2 {
-  margin: 2% auto;
-  z-index: 3;
-}
+
 /* #projects .container {
   width: 80%;
   height: fit-content;

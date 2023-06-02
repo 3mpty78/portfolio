@@ -57,37 +57,41 @@
   width: 30%;
 }
 
-/* Circles animation */
+/* Circle animation */
 
-.circle {
-  position: absolute;
+.blob {
   border: 2px solid var(--yellow);
-  width: 35vw;
-  height: 35vw;
-  border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
   opacity: 0.1;
-  animation: strange_1 10s linear infinite;
   z-index: -1;
+  animation: rotate 10s linear infinite;
 }
-.circle_2 {
-  position: absolute;
+.lil_blob {
+  height: 5vw;
+  width: 5vw;
+  margin-left: 9%;
+  margin-top: 9%;
   border: 2px solid var(--yellow);
-  width: 35vw;
-  height: 35vw;
-  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-  opacity: 0.1;
-  animation: strange_2 14s linear infinite;
-  z-index: -1;
+  border-radius: 50%;
 }
-.circle_3 {
-  position: absolute;
+.blob_2 {
   border: 2px solid var(--yellow);
-  width: 35vw;
-  height: 35vw;
-  border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
   opacity: 0.1;
-  animation: strange_3 10s linear infinite;
   z-index: -1;
+  animation: rotate_2 15s ease-in-out infinite;
+}
+.lil_blob_2 {
+  height: 10vw;
+  width: 10vw;
+  border: 2px solid var(--yellow);
+  border-radius: 50%;
 }
 
 /* Responsive */

@@ -1,48 +1,12 @@
 #profil {
-  height: 100vh;
-  margin-top: 10%;
+  height: 110vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  align-items: center;
-}
-.blob {
-  border: 2px solid var(--yellow);
-  position: absolute;
-  width: 30vw;
-  height: 30vw;
-  border-radius: 50%;
-  opacity: 0.1;
-  z-index: -1;
-  animation: rotate 10s linear infinite;
-}
-.lil_blob {
-  height: 5vw;
-  width: 5vw;
-  margin-left: 9%;
-  margin-top: 9%;
-  border: 2px solid var(--yellow);
-  border-radius: 50%;
-}
-.blob_2 {
-  border: 2px solid var(--yellow);
-  position: absolute;
-  width: 30vw;
-  height: 30vw;
-  border-radius: 50%;
-  opacity: 0.1;
-  z-index: -1;
-  animation: rotate_2 15s ease-in-out infinite;
-}
-.lil_blob_2 {
-  height: 10vw;
-  width: 10vw;
-  border: 2px solid var(--yellow);
-  border-radius: 50%;
 }
 .picture_container {
-  width: 25%;
-  height: 60vh;
+  width: 20%;
+  height: 50vh;
   border-radius: 15px;
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -63,9 +27,9 @@
   margin: 0;
   padding: 1em;
   width: 50%;
-  height: 60%;
-  font-family: candara, "verdana";
-  text-align: center;
+  height: fit-content;
+  /* font-family: candara, "verdana"; */
+  text-align: justify;
   font-weight: lighter;
   font-size: 1.5em;
   line-height: 2.5em;
@@ -107,5 +71,7 @@
   }
   #profil h2 {
     margin: 1em auto;
+    position: sticky;
+    top: 1em;
   }
 }
