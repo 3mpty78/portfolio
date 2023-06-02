@@ -113,7 +113,7 @@
   color: var(--darkBrown);
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-flow: column nowrap;
 }
 .secondContainer h2 {

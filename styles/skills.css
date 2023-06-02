@@ -18,7 +18,6 @@
   height: 100%;
   margin: 5% 0;
 }
-
 .soft-skills {
   width: 40%;
   height: 50%;
@@ -27,7 +26,60 @@
 .tools {
   width: 40%;
   height: 50%;
-  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px) brightness(1.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  opacity: 0.2;
+  transition: 0.2s;
+}
+.tools:hover {
+  cursor: crosshair;
+  opacity: 1;
+}
+.gridContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+#skills h3 {
+  font-size: 2em;
+  color: var(--yellow);
+}
+.techno {
+  width: 6em;
+  height: 6em;
+}
+.techno:nth-child(1) {
+  background: url(../assets/img/icons/html.png) no-repeat center/contain;
+}
+.techno:nth-child(2) {
+  background: url(../assets/img/icons/css-3.png) no-repeat center/contain;
+}
+.techno:nth-child(3) {
+  background: url(../assets/img/icons/js.png) no-repeat center/contain;
+}
+.learning .techno:nth-child(1) {
+  background: url(../assets/img/icons/react.png) no-repeat center/contain;
+}
+.learning .techno:nth-child(2) {
+  background: url(../assets/img/icons/reactnative.webp) no-repeat center/contain;
+}
+.learning .techno:nth-child(3) {
+  background: url(../assets/img/icons/nodejs.png) no-repeat center/contain;
+}
+.learning .techno:nth-child(4) {
+  background: url(../assets/img/icons/python.png) no-repeat center/contain;
+}
+.learning .techno:nth-child(5) {
+  background: url(../assets/img/icons/php.png) no-repeat center/contain;
 }
 
 /* Previous code */
