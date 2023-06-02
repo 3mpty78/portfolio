@@ -1,4 +1,5 @@
 #profil {
+  position: relative;
   height: 110vh;
   display: flex;
   flex-flow: row wrap;
@@ -17,7 +18,6 @@
   transform: rotate(-5deg);
 }
 .about_picture {
-  /* background: url(../assets/img/myself.webp) no-repeat center/cover; */
   background: url(../assets/img/moi.png) no-repeat center/cover;
   width: 100%;
   height: 100%;
