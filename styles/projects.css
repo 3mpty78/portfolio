@@ -13,10 +13,6 @@
 .gallery-container {
   width: 100vw;
   height: auto;
-}
-.gallery {
-  width: 100%;
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -28,23 +24,17 @@
   width: 100%;
   margin: 2% 0;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
   overflow-y: hidden;
   border-radius: 15px;
 }
 .tech_container {
-  width: 30%;
+  width: 100%;
   height: 100%;
-  margin-left: 2%;
   display: flex;
+  flex-grow: 1;
   align-items: center;
   justify-content: space-evenly;
-}
-.blankspace {
-  width: 30%;
-  height: 100%;
 }
 .html,
 .css,
@@ -116,17 +106,19 @@
 .first-snippet-text,
 .second-snippet-text,
 .third-snippet-text {
-  width: 100%;
+  position: sticky;
+  top: 0;
+  width: 40%;
   height: 100%;
   color: var(--darkBrown);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-flow: column nowrap;
 }
-.snippet-container h2 {
-  font-size: 2.2em;
-  font-weight: 300;
+.secondContainer h2 {
+  font-size: 2em;
+  font-weight: bold;
 }
 #projects h4 {
   width: 50%;
@@ -141,7 +133,7 @@
   font-size: 1em;
   font-weight: 300;
 }
-.line1 .snippet-container:hover {
+.snippet-container:hover {
   transform: translateY(-100%);
 }
 #projects a {

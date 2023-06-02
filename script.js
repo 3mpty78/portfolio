@@ -36,4 +36,14 @@ next.addEventListener("click", () => {
 
 // Style for progress bar
 
+const progressbar = document.querySelector(".progress-bar");
+const projects = document.querySelector(".content");
+
+projects.addEventListener("scroll", () => {
+  let progress =
+    (projects.scrollTop / (projects.scrollHeight - projects.clientHeight)) *
+    100;
+  progressbar.style.height = progress + "%";
+});
+
 // oDomElement.style.overflowY = "hidden";
