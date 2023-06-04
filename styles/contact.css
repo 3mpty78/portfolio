@@ -68,7 +68,7 @@
 /* Contact carousel design */
 
 .contact-container {
-  border: 2px solid var(--grey);
+  border: 2px solid var(--white);
   border-radius: 25px;
   position: relative;
   display: flex;
@@ -174,7 +174,7 @@
 .slide-toggle-container {
   width: 10%;
   height: 100%;
-  border-left: 2px solid var(--grey);
+  border-left: 2px solid var(--white);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

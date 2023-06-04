@@ -34,16 +34,25 @@ next.addEventListener("click", () => {
   carousel.style.transform = "translateY(" + index * -25 + "%)";
 });
 
-// Style for progress bar
+// Hamburger navigation toggler
 
-const progressbar = document.querySelector(".progress-bar");
-const projects = document.querySelector(".content");
+const btn = document.querySelector(".nav-toggler");
+const header = document.querySelector(".header");
 
-projects.addEventListener("scroll", () => {
-  let progress =
-    (projects.scrollTop / (projects.scrollHeight - projects.clientHeight)) *
-    100;
-  progressbar.style.height = progress + "%";
+document.addEventListener("click", (e) => {
+  if (e.target.closest(".nav-toggler")) {
+    btn.classList.toggle("toggle");
+    header.classList.toggle("active");
+  } else if (!e.target.closest(".nav-toggler")) {
+    btn.classList.remove("toggle");
+    header.classList.remove("active");
+  }
+});
+document.addEventListener("scroll", (f) => {
+  if (window.scrollY > 50) {
+    btn.classList.remove("toggle");
+    header.classList.remove("active");
+  }
 });
 
 // oDomElement.style.overflowY = "hidden";

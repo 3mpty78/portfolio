@@ -5,6 +5,7 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
   border-bottom: 2px solid var(--orange);
+  border-top: 2px solid var(--orange);
 }
 .picture_container {
   width: 20%;
@@ -39,6 +40,7 @@
 }
 #profil p span {
   color: var(--orange);
+  font-weight: bold;
 }
 
 /* Responsive */
