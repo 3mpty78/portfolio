@@ -14,6 +14,8 @@
   src: url(../assets/fonts/Rantera.otf);
   font-family: candara;
   src: url(../assets/fonts/CANDARA.TTF);
+  font-family: poppins;
+  src: url(../assets/fonts/Poppins-Thin.ttf);
 }
 @font-face {
   font-family: "Material Icons";
@@ -99,10 +101,13 @@ main {
 }
 #menu {
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: space-around;
+  background: url(../assets/img/laptop.webp) no-repeat center/cover;
+  background-attachment: fixed;
 }
 .bounce {
   position: absolute;
@@ -112,8 +117,8 @@ main {
 .bounce div {
   position: absolute;
   border-radius: 50%;
-  opacity: 0.1;
-  border: 2px solid var(--yellow);
+  opacity: 0.5;
+  border: 2px solid var(--grey);
 }
 .rebond_1 {
   width: 2.5vw;
@@ -138,7 +143,7 @@ main {
   animation: bounce_2 15s infinite ease-in-out;
 }
 h1 {
-  font-size: 11vw;
+  font-size: 10vw;
   text-align: center;
   height: fit-content;
   margin: auto 2%;
@@ -146,9 +151,12 @@ h1 {
   width: 40%;
   color: var(--white);
   z-index: 1;
+  font-family: poppins;
 }
 h1 span {
   margin-left: 1em;
+  font-weight: bold;
+  color: var(--orange);
 }
 h2 {
   width: 100%;
@@ -156,7 +164,7 @@ h2 {
   text-align: center;
   font-weight: bold;
   font-size: 4em;
-  color: var(--yellow);
+  color: var(--orange);
   padding: 0;
 }
 aside {
@@ -178,6 +186,10 @@ aside ul {
 }
 aside li {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
 }
 aside a {
   font-size: 200%;
@@ -195,8 +207,8 @@ aside a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 30vw;
-  height: 30vw;
+  width: 25vw;
+  height: 25vw;
   background: url(../assets/img/profilPic.webp) no-repeat center/cover;
   border-radius: 50%;
   border: 2px solid var(--darkBrown);

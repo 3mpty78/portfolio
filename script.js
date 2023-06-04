@@ -26,11 +26,11 @@ const textSlides = document.querySelector(".mockup_description_container");
 let index = 0;
 
 previous.addEventListener("click", () => {
-  index = index > 0 ? index - 1 : 3;
+  index = index < 3 ? index + 1 : 0;
   carousel.style.transform = "translateY(" + index * -25 + "%)";
 });
 next.addEventListener("click", () => {
-  index = index < 3 ? index + 1 : 0;
+  index = index > 0 ? index - 1 : 3;
   carousel.style.transform = "translateY(" + index * -25 + "%)";
 });
 
