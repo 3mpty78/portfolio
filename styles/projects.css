@@ -47,6 +47,10 @@
   height: 4em;
   border-radius: 50%;
 }
+.mongo {
+  width: 4em;
+  height: 4em;
+}
 .html {
   background: url(../assets/img/icons/html.png) no-repeat center/contain;
 }
@@ -64,6 +68,9 @@
 }
 .discord {
   background: url(../assets/img/icons/discordjs.png) no-repeat center/contain;
+}
+.mongo {
+  background: url(../assets/img/icons/mongo.png) no-repeat center/contain;
 }
 .snippet-container {
   height: 100%;
@@ -150,109 +157,6 @@
 .third-snippet-text a:hover {
   cursor: not-allowed;
 }
-
-/* #projects a {
-  width: 6em;
-  margin: 0;
-  padding: 1em;
-  background: var(--white);
-  text-align: center;
-  text-decoration: none;
-  color: var(--background);
-  font-size: 1em;
-  transition: 0.4s;
-  letter-spacing: 0.1em;
-  font-family: candara;
-  font-weight: bold;
-  border-radius: 10px;
-}
-#projects a:hover {
-  background: var(--yellow);
-  color: var(--background);
-}
-#projects > article {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-} */
-
-/* #projects .container {
-  width: 80%;
-  height: fit-content;
-  z-index: 2;
-}
-#projects .carousel {
-  border-radius: 15px;
-  height: 80%;
-  width: 100%;
-  overflow: hidden;
-}
-#projects .slider {
-  margin: 0;
-  height: 100%;
-  width: 400%;
-  display: flex;
-  transition: all 0.6s ease-in-out;
-}
-#projects .slider section {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#projects .slider section img {
-  width: 30vw;
-}
-.text-container {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 50%;
-  height: 85%;
-}
-.text-container h3 {
-  font-weight: bold;
-  font-size: 3.5em;
-  margin: 0;
-}
-.text-container h4 {
-  text-align: center;
-  font-size: 2em;
-  font-weight: lighter;
-  color: var(--yellow);
-}
-.controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 5;
-}
-.controls:nth-child(1) {
-  margin-left: 0;
-}
-.controls:nth-child(2) {
-  margin-right: 0;
-}
-.controls .arrow {
-  margin: 0 2%;
-}
-.controls .left {
-  background: url(../assets/img/icons/left.png) no-repeat center/cover;
-  filter: invert(1);
-  height: 3em;
-  width: 3em;
-}
-.controls .right {
-  transform: rotate(180deg);
-  background: url(../assets/img/icons/left.png) no-repeat center/cover;
-  filter: invert(1);
-  height: 3em;
-  width: 3em;
-} */
 
 /* Eclipse style */
 

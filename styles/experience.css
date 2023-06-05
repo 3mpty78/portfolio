@@ -21,9 +21,18 @@
   border-radius: 15px;
   transition: 0.6s;
 }
+.card a {
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.4s;
+}
 .card:hover {
   box-shadow: 0 0 15px var(--grey);
   animation: shadow 2s linear infinite;
+}
+.card:hover a {
+  color: var(--orange);
+  text-decoration: underline;
 }
 .card:nth-child(3),
 .card:nth-child(5) {
