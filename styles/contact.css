@@ -107,7 +107,7 @@
   padding: 0.5em;
   background: transparent;
   border: 2px solid var(--white);
-  background: darkslategrey;
+  background: var(--background);
   border-radius: 15px;
   transition: all 0.4s;
 }
@@ -235,8 +235,8 @@
     background: url(../assets/img/C3828B55-9DD3-4D65-8817-7F9949B57486.JPG)
       no-repeat center/cover;
     border: 2px solid var(--white);
-    width: 8em;
-    height: 8em;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
   }
   .cards a {

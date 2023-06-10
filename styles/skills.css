@@ -50,6 +50,9 @@
   font-size: 2em;
   color: var(--orange);
 }
+.learning h3 {
+  color: var(--grey);
+}
 .techno {
   width: 4vw;
   height: 4vw;
@@ -121,6 +124,8 @@
 @media screen and (max-width: 1200px) {
   #skills {
     height: auto;
+    width: 100%;
+    border: 1px solid red;
   }
   .skills-container {
     flex-flow: column nowrap;
@@ -139,22 +144,24 @@
     width: 20em;
     height: 20em;
   }
-  #skills {
+  .techno {
+    width: 6vw;
+    height: 6vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skills-container {
     width: 100%;
   }
-  #english .jauge_english {
-    width: 70%;
+  .tools {
+    width: 75%;
+    height: 25vh;
+    margin-bottom: 2%;
   }
-  #html .jauge_html {
-    width: 80%;
+  .tools:nth-child(1) {
+    border: 1px solid var(--orange);
   }
-  #css .jauge_css {
-    width: 60%;
-  }
-  #javascript .jauge_javascript {
-    width: 20%;
-  }
-  #git .jauge_git {
-    width: 30%;
+  .tools:nth-child(2) {
+    border: 1px solid var(--grey);
   }
 }
