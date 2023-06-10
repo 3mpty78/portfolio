@@ -125,7 +125,6 @@
   #skills {
     height: auto;
     width: 100%;
-    border: 1px solid red;
   }
   .skills-container {
     flex-flow: column nowrap;
@@ -148,8 +147,6 @@
     width: 6vw;
     height: 6vw;
   }
-}
-@media screen and (max-width: 600px) {
   .skills-container {
     width: 100%;
   }
