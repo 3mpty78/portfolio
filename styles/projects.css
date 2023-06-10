@@ -113,8 +113,6 @@
 .first-snippet-text,
 .second-snippet-text,
 .third-snippet-text {
-  position: sticky;
-  top: 0;
   width: 40%;
   height: 100%;
   color: var(--background);
@@ -129,7 +127,7 @@
 }
 #projects h4 {
   width: 50%;
-  text-align: center;
+  text-align: justify;
   font-size: 1.8em;
   font-weight: 300;
 }
@@ -185,6 +183,11 @@
 
 /* Responsive */
 
+@media screen and (max-width: 1200px) {
+  #projects h4 {
+    font-size: 1.5em;
+  }
+}
 @media screen and (max-width: 950px) {
   #projects {
     flex-flow: column nowrap;

@@ -78,3 +78,11 @@
     top: 1em;
   }
 }
+@media screen and (max-width: 600px) {
+  .picture_container {
+    display: none;
+  }
+  #profil {
+    height: auto;
+  }
+}
