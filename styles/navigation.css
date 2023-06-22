@@ -122,5 +122,6 @@ header li:hover {
   }
   .nav-toggler {
     top: 1.5%;
+    width: 35px;
   }
 }
