@@ -1,26 +1,22 @@
 #contact {
+  width: 100%;
+  height: 100vh;
+}
+.contact-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
-  gap: 3em;
-  width: 100%;
-  height: 100vh;
-  background: url(../assets/img/computer.webp) no-repeat center/cover;
-  background-attachment: fixed;
 }
-
-/* Insta card design */
-
-.cards {
-  position: relative;
+.instaCard {
+  width: 20%;
+  height: 60vh;
   border-radius: 25px;
-  height: 30em;
-  width: 20em;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: space-around;
+  box-shadow: 0 0 20px #080808;
   background: linear-gradient(
     45deg,
     #405de6,
@@ -30,233 +26,173 @@
     #e1306c,
     #fd1d1d
   );
-  box-shadow: 0 0 10px var(--background);
-  transform: rotate(5deg);
-  transition: 0.6s;
-}
-.cards a {
-  color: var(--white);
-  text-align: center;
-  font-size: 2em;
-  text-decoration: none;
-  padding: 0.5em;
-  background: transparent;
-  border: 2px solid var(--white);
-  border-radius: 15px;
-  transition: all 0.4s;
-}
-.cards a:hover {
-  background: var(--white);
-  color: var(--background);
-  border: 2px solid var(--background);
-}
-.cards:hover {
-  transform: rotate(-5deg);
-}
-.cards i {
-  background: url(../assets/img/moi.png) no-repeat center/cover;
-  border: 2px solid var(--white);
-  width: 12em;
-  height: 12em;
-  border-radius: 50%;
-}
-
-/* Contact carousel design */
-
-.contact-container {
-  box-shadow: 0 0 10px var(--background);
-  border-radius: 25px;
-  position: relative;
+  backdrop-filter: brightness(1.1);
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 50%;
-  height: 30em;
-  overflow: hidden;
-}
-.contact {
-  width: 90%;
-  height: 400%;
-  display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-between;
-  transition: all 0.6s;
+  justify-content: space-around;
 }
-.slide {
-  position: relative;
-  width: 90%;
-  height: 100%;
-  padding: 0 5%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  gap: 1em;
-  align-items: center;
-}
-.slide a {
-  color: var(--white);
-  width: 5em;
-  text-align: center;
-  font-size: 1.5em;
-  text-decoration: none;
-  padding: 0.5em;
-  background: transparent;
-  border: 2px solid var(--white);
-  background: var(--background);
-  border-radius: 15px;
-  transition: all 0.4s;
-}
-.slide a:hover {
-  background: var(--white);
-  color: var(--background);
-  border: 2px solid var(--background);
-}
-.slide i {
-  width: 6em;
-  height: 6em;
-}
-.email {
-  background: linear-gradient(
-    135deg,
-    hsla(29, 92%, 70%, 1) 0%,
-    hsla(0, 87%, 73%, 1) 100%
-  );
-}
-.tel {
-  background: linear-gradient(
-    -135deg,
-    rgba(251, 208, 124, 1) 0%,
-    rgba(233, 233, 233, 1) 100%
-  );
-}
-.github {
-  background: linear-gradient(
-    135deg,
-    hsla(180, 8%, 7%, 1) 0%,
-    hsla(0, 0%, 16%, 1) 100%
-  );
-}
-.linkedin {
-  background: linear-gradient(
-    135deg,
-    hsla(239, 100%, 67%, 1) 0%,
-    hsla(187, 100%, 89%, 1) 100%
-  );
-}
-.email i {
-  background: url(../assets/img/icons/e-mail.png) no-repeat center/cover;
-}
-.tel i {
-  background: url(../assets/img/icons/telephoner.png) no-repeat center/cover;
-}
-.github i {
-  background: url(../assets/img/icons/github.png) no-repeat center/cover;
-  filter: invert(1);
-}
-.linkedin i {
-  background: url(../assets/img/icons/linkedin.png) no-repeat center/cover;
-}
-.slash {
+.profilPicture {
   width: 10em;
-  height: 3px;
-  background: var(--white);
-  border-radius: 5px;
+  height: 10em;
+  border-radius: 50%;
+  background: url(../assets/img/moi.png) no-repeat center/cover;
+  box-shadow: 0 0 20px #080808;
 }
-.slide > * {
-  position: relative;
-  margin: 0;
+button {
+  width: 50%;
+  height: 50px;
+  border-radius: 15px;
+  background: transparent;
+  border: 2px solid var(--white);
+  font-family: "Poppins-Light";
+  color: var(--white);
+  font-size: 1.2em;
+  transition: 0.2s;
 }
-.slide-toggle-container {
-  width: 10%;
-  height: 100%;
-  border-left: 2px solid var(--white);
+.contact-container a {
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.2s;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--white);
+}
+button:hover a {
+  color: var(--background);
+}
+.links {
+  width: 20%;
+  padding: 2em;
+  height: fit-content;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-flow: column nowrap;
   align-items: center;
+  gap: 2em;
+  border-radius: 25px;
+  box-shadow: 0 0 30px #080808;
+  backdrop-filter: brightness(1.5);
 }
-.slide-toggle {
-  margin: 1em;
+.links a {
+  font-size: 1.2em;
+  font-family: "Poppins-Light";
+  width: 100%;
+  text-align: right;
+}
+.githubButton,
+.linkedinButton,
+.emailButton {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: brightness(1.5);
+  border: none;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+.githubButton:hover,
+.linkedinButton:hover,
+.emailButton:hover {
+  background: var(--blue);
+}
+.githubButton:hover span,
+.linkedinButton:hover span,
+.emailButton:hover span {
+  filter: none;
+}
+.githubButton:hover a,
+.linkedinButton:hover a,
+.emailButton:hover a {
+  color: var(--background);
+  padding-right: 1em;
+}
+.links span {
   width: 2em;
   height: 2em;
-  background: url(../assets/img/icons/arrow.png) no-repeat center/cover;
-  /* filter: invert(1); */
-  cursor: pointer;
+  filter: invert(0.75);
+  transition: 0.2s;
 }
-.prev {
-  transform: rotate(180deg);
+.linkedin {
+  background: url(../assets/img/icons/svg_icons/linkedin-round-svgrepo-com.svg)
+    no-repeat center/contain;
+}
+.email {
+  background: url(../assets/img/icons/svg_icons/email-svgrepo-com.svg) no-repeat
+    center/contain;
 }
 
-/* Circles animation */
+/* Circle animation */
 
-.circles {
+.blob {
+  border: 2px solid var(--blue);
   position: absolute;
-  width: 35vw;
-  height: 35vw;
-  opacity: 0.1;
-  border: 2px solid var(--yellow);
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: blur(5px);
+  z-index: -1;
+  animation: rotate 10s linear infinite;
 }
-.circle {
-  border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
-  animation: strange_1 10s linear infinite;
+.lil_blob {
+  height: 5vw;
+  width: 5vw;
+  margin-left: 9%;
+  margin-top: 9%;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
 }
-.circle_2 {
-  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-  animation: strange_2 14s linear infinite;
+.blob_2 {
+  border: 2px solid var(--blue);
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: blur(5px);
+  z-index: -1;
+  animation: rotate_2 15s ease-in-out infinite;
 }
-.circle_3 {
-  border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
-  animation: strange_3 10s linear infinite;
+.lil_blob_2 {
+  height: 10vw;
+  width: 10vw;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
 }
 
 /* Responsive */
 
 @media screen and (max-width: 950px) {
-  #contact {
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-  }
-  .cards {
-    height: 60%;
-    width: 90%;
-    flex-flow: row wrap;
-    gap: 0.8em;
-    margin: 5%;
-  }
-  .cards i {
-    background: url(../assets/img/moi.png) no-repeat center/cover;
-    border: 2px solid var(--white);
-    width: 9em;
-    height: 9em;
-    border-radius: 50%;
-  }
-  .cards a {
-    font-size: 2.2em;
-  }
   .contact-container {
-    width: 90%;
+    flex-flow: column-reverse nowrap;
   }
-  .slash {
-    width: 35vw;
+  .links {
+    width: 75%;
   }
-  .slide {
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-around;
+  .instaCard {
+    width: 75%;
+    height: 25%;
   }
-  .slide a {
-    width: 60%;
-    font-size: 3em;
+  .profilPicture {
+    width: 6em;
+    height: 6em;
   }
-  .slide i {
-    width: 5em;
-    height: 5em;
+  .blob,
+  .blob_2 {
+    width: 60vw;
+    height: 60vw;
   }
-  .slide-toggle-container {
-    width: 16%;
+  .lil_blob {
+    width: 10vw;
+    height: 10vw;
+  }
+  .lil_blob_2 {
+    width: 20vw;
+    height: 20vw;
   }
 }

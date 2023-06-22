@@ -1,88 +1,50 @@
-#profil {
-  position: relative;
-  height: 110vh;
+#about {
+  width: 100%;
+  height: 100vh;
+  margin: 2em 0;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  border-bottom: 2px solid var(--orange);
-  border-top: 2px solid var(--orange);
+  flex-flow: column nowrap;
+  align-items: center;
+  background: var(--background);
 }
-.picture_container {
-  width: 20%;
-  height: 50vh;
-  border-radius: 15px;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  transition: 0.6s;
-  transform: rotate(5deg);
-}
-.picture_container:hover {
-  transform: rotate(-5deg);
-}
-.about_picture {
-  background: url(../assets/img/moi.png) no-repeat center/cover;
+.aboutMe {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
 }
-#profil p {
-  margin: 0;
-  padding: 1em;
-  width: 50%;
+.aboutMe img {
+  width: 15vw;
+}
+#about p {
+  width: 45%;
+  padding: 20px;
   height: fit-content;
-  /* font-family: candara, "verdana"; */
   text-align: justify;
-  font-weight: lighter;
-  font-size: 1.5em;
-  line-height: 2.5em;
-  border-right: 2px solid var(--orange);
-  transition: 0.4s;
+  border-right: 2px solid var(--blue);
+  font-size: 1.8vw;
+  line-height: 1.8em;
 }
-#profil p span {
-  color: var(--orange);
-  font-weight: bold;
+#about p span {
+  font-family: "Poppins-SemiBold";
+  color: var(--blue);
 }
 
 /* Responsive */
 
 @media screen and (max-width: 950px) {
-  #profil p,
-  #profil > a {
-    font-size: 1.2em;
-    text-align: justify;
-  }
-  #profil p {
-    width: 90%;
-  }
-  #profil {
+  .aboutMe {
     flex-flow: column nowrap;
-    align-items: center;
     justify-content: center;
+    gap: 10em;
   }
-  .picture_container {
-    width: 50%;
-    height: 30vh;
+  .aboutMe img {
+    width: 35vw;
   }
-  .blob,
-  .blob_2 {
-    width: 16em;
-    height: 16em;
-  }
-  .lil_blob_2 {
-    width: 10em;
-    height: 10em;
-  }
-  #profil h2 {
-    margin: 1em auto;
-    position: sticky;
-    top: 1em;
-  }
-}
-@media screen and (max-width: 600px) {
-  .picture_container {
-    display: none;
-  }
-  #profil {
-    height: auto;
+  #about p {
+    font-size: 5vw;
+    width: 75%;
   }
 }

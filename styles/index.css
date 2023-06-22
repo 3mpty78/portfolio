@@ -1,14 +1,26 @@
 /* Imports */
-
-@import "./normalize.css";
 @import "./variables.css";
 @import "./about.css";
-@import "./experience.css";
 @import "./skills.css";
 @import "./projects.css";
 @import "./contact.css";
 @import "./animations.css";
+@import "./navigation.css";
 
+:root {
+  font-family: poppins;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
 @font-face {
   font-family: rantera;
   src: url(../assets/fonts/Rantera.otf);
@@ -18,40 +30,18 @@
   src: url(../assets/fonts/Poppins-Thin.ttf);
 }
 @font-face {
+  font-family: "Poppins-SemiBold";
+  src: url(../assets/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(../assets/fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
   src: url(../assets/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
-}
-/* cyrillic */
-@font-face {
-  font-family: "Poiret One";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../assets/fonts/UqyVK80NJXN4zfRgbdfbo5pcV_cx.woff2) format("woff2");
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-  font-family: "Poiret One";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../assets/fonts/UqyVK80NJXN4zfRgbdfbo5BcV_cx.woff2) format("woff2");
-  unicode-range: U+0100-02AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF,
-    U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: "Poiret One";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../assets/fonts/UqyVK80NJXN4zfRgbdfbo55cVw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
 }
 
 .material-icons {
@@ -69,161 +59,98 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Cursor style */
-
-/* #pointed {
-  position: absolute;
-  z-index: 20;
-  width: 1em;
-  height: 1em;
-  background: var(--background);
-  border: 2px solid var(--yellow);
-  border-radius: 50%;
-} */
-
 /* Hamburger navigation */
 
-.nav-toggler {
-  position: fixed;
-  z-index: 20;
-  top: 5%;
-  right: 3%;
-  height: 50px;
-  width: 50px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-}
-.line {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 3px;
-  border-radius: 50px;
-  background: var(--orange);
-  transition: transform 0.3s ease-out, opacity 0.1s ease-out;
-}
-.l1 {
-  transform: translateY(-10px);
-}
-.l3 {
-  transform: translateY(10px);
-}
-.nav-toggler.toggle {
-  position: fixed;
-}
-.nav-toggler.toggle .l1 {
-  transform: translateY(0) rotate(135deg);
-}
-.nav-toggler.toggle .l2 {
-  opacity: 0;
-}
-.nav-toggler.toggle .l3 {
-  transform: translateY(0) rotate(-135deg);
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  margin-top: -100vh;
-  transition: 0.6s;
-  border-bottom: 2px solid var(--orange);
-  backdrop-filter: blur(10px) brightness(0.75);
-  z-index: 5;
-
-  padding: 0;
-}
-header nav {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background: var(--background);
-
-  margin: 0;
-  padding: 0;
-}
-header nav ul {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  flex-flow: column nowrap;
-
-  margin: 0;
-  padding: 0;
-}
-header nav ul li {
-  height: 100%;
-  width: 100%;
-  list-style-type: none;
-  transition: 0.4s;
-  display: flex;
-  align-items: center;
-
-  background: linear-gradient(-135deg, var(--orange) 50%, #fff 0)
-      var(--_d, 100%) / 250% no-repeat,
-    linear-gradient(-135deg, #0000 50%, var(--orange) 0) var(--_d, 100%) / 250%
-      no-repeat;
-  -webkit-background-clip: text, padding-box;
-  background-clip: text, padding-box;
-  transition: 0.5s;
-
-  margin: 0;
-  padding: 0 1em;
-}
-header a {
-  color: var(--white);
-  width: 100%;
-  height: 100%;
-  font-size: 2.5em;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  transition: 0.4s;
-
-  margin: 0;
-  padding: 0;
-}
-header li:hover {
-  cursor: pointer;
-  --_d: 50%;
-}
-.active {
-  margin-top: 0;
-}
-
-/* Home style */
-body {
-  width: 100vw;
-  height: auto;
-  background: var(--background);
-  font-family: "Poiret One", cursive;
-  font-weight: lighter;
-  color: var(--white);
-}
 main {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+* {
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--white);
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--grey);
+  border-radius: 15px;
+}
+
+/* Home screen */
+
+.homeScreen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
+  backdrop-filter: blur(5px);
 }
-#menu {
-  height: 100vh;
-  width: 100%;
+.homeScreen img {
+  position: absolute;
+  right: 15%;
+  width: 15vw;
+}
+h1 {
+  margin: 0 15%;
+  padding: 0;
+  font-size: 8vw;
+  width: fit-content;
+  height: fit-content;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: space-around;
-  background: url(../assets/img/laptop.webp) no-repeat center/cover;
-  background-attachment: fixed;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
+h1 span {
+  color: var(--blue);
+  font-family: "Poppins-SemiBold";
+  margin: 0;
+}
+.title-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: fit-content;
+  backdrop-filter: blur(15px);
+  background: #121212ad;
+  z-index: 1;
+}
+h2 {
+  width: fit-content;
+  padding: 1.5% 5%;
+  height: fit-content;
+  margin: 0;
+  font-family: "Poppins-SemiBold";
+  color: var(--white);
+  font-size: 3vw;
+}
+.homeScreen p {
+  width: fit-content;
+  font-size: 2vw;
+  margin: 0 15%;
+  padding: 0;
+}
+.homeScreen p span {
+  color: var(--blue);
+  font-family: "Poppins-SemiBold";
+}
+
+/* Circle animation */
+
 .bounce {
   position: absolute;
   height: 100%;
@@ -232,14 +159,14 @@ main {
 .bounce div {
   position: absolute;
   border-radius: 50%;
-  opacity: 0.5;
-  border: 2px solid var(--grey);
+  opacity: 0.2;
+  border: 2px solid var(--blue);
 }
 .rebond_1 {
   width: 2.5vw;
   height: 2.5vw;
   top: 53em;
-  left: 40%;
+  left: 41%;
   transition: 0.6s;
   animation: bounce 20s infinite ease-in-out;
 }
@@ -253,88 +180,32 @@ main {
 .rebond_3 {
   width: 20vw;
   height: 20vw;
-  left: 55%;
+  left: 56%;
   top: 0;
   animation: bounce_2 15s infinite ease-in-out;
-}
-.main-title {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-h1 {
-  font-size: 10vw;
-  text-align: center;
-  height: fit-content;
-  font-weight: lighter;
-  color: var(--white);
-  z-index: 1;
-  font-family: poppins;
-  margin: 0;
-  padding: 0;
-}
-h1 span {
-  font-weight: bold;
-  color: var(--orange);
-}
-h2 {
-  width: 100%;
-  margin: 2% auto;
-  text-align: center;
-  font-weight: bold;
-  font-size: 4em;
-  color: var(--orange);
-  padding: 0;
-}
-.profilPic {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25vw;
-  height: 25vw;
-  background: url(../assets/img/profilPic.webp) no-repeat center/cover;
-  border-radius: 50%;
-  border: 2px solid var(--darkBrown);
-  box-shadow: var(--shadow);
 }
 
 /* Responsive */
 
 @media screen and (max-width: 950px) {
-  main {
-    padding-bottom: 10em;
-  }
-  aside {
-    align-self: flex-end;
-    justify-self: flex-end;
-    text-justify: end;
-    text-align: end;
-    width: 50%;
-    height: 50%;
-    z-index: 2;
-  }
-  li > a {
-    background-color: #111414;
-    border-radius: 50px;
-  }
-  h1 {
-    width: 100%;
-  }
-  h2 {
-    font-size: 8vw;
-  }
-}
-@media screen and (max-width: 600px) {
   h1 {
     font-size: 15vw;
   }
-  header a {
+  .homeScreen img {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35vw;
+    z-index: -1;
+  }
+  h2 {
     font-size: 1.8em;
   }
-  header li {
-    border-bottom: 1px solid var(--grey);
+  .homeScreen p {
+    font-size: 5vw;
+  }
+  .rebond_2 {
+    width: 60vw;
+    height: 60vw;
   }
 }

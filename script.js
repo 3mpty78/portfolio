@@ -1,43 +1,7 @@
-// Cursor script
-
-const pointed = document.getElementById("pointed");
-
-const moveCursor = (e) => {
-  const mouseY = e.pageY;
-  const mouseX = e.pageX;
-
-  pointed.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-};
-
-window.addEventListener("mousemove", moveCursor);
-
-// Sliders script
-
-const carousel = document.querySelector(".contact");
-const previous = document.querySelector(".prev");
-const next = document.querySelector(".next");
-
-const firstProject = document.querySelector(".first_project");
-const secondProject = document.querySelector(".second_project");
-const thirdProject = document.querySelector(".third_project");
-const slides = document.querySelector(".mockup_picture_container");
-const textSlides = document.querySelector(".mockup_description_container");
-
-let index = 0;
-
-previous.addEventListener("click", () => {
-  index = index < 3 ? index + 1 : 0;
-  carousel.style.transform = "translateY(" + index * -25 + "%)";
-});
-next.addEventListener("click", () => {
-  index = index > 0 ? index - 1 : 3;
-  carousel.style.transform = "translateY(" + index * -25 + "%)";
-});
-
 // Hamburger navigation toggler
 
 const btn = document.querySelector(".nav-toggler");
-const header = document.querySelector(".header");
+const header = document.querySelector("header");
 
 document.addEventListener("click", (e) => {
   if (e.target.closest(".nav-toggler")) {
@@ -56,3 +20,166 @@ document.addEventListener("scroll", (f) => {
 });
 
 // oDomElement.style.overflowY = "hidden";
+
+// 3D hover effect
+
+function design3d() {
+  let design = document.getElementById("design");
+
+  const height = design.clientHeight;
+  const width = design.clientWidth;
+
+  design.addEventListener("mousemove", handleMove);
+
+  function handleMove(e) {
+    /* Store the x position */
+    const xVal = e.layerX;
+    /* Store the y position */
+    const yVal = e.layerY;
+
+    const yRotation = 10 * ((xVal - width / 2) / width);
+
+    /* Calculate the rotation along the X-axis */
+    const xRotation = -10 * ((yVal - height / 2) / height);
+    const string =
+      "perspective(500px) scale(1.01) rotateX(" +
+      xRotation +
+      "deg) rotateY(" +
+      yRotation +
+      "deg)";
+
+    design.style.transform = string;
+  }
+  design.addEventListener("mouseout", function () {
+    design.style.transform =
+      "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+  });
+}
+
+function code3d() {
+  let code = document.getElementById("code");
+
+  const height = code.clientHeight;
+  const width = code.clientWidth;
+
+  code.addEventListener("mousemove", handleMove);
+
+  function handleMove(e) {
+    /* Store the x position */
+    const xVal = e.layerX;
+    /* Store the y position */
+    const yVal = e.layerY;
+
+    const yRotation = 10 * ((xVal - width / 2) / width);
+
+    /* Calculate the rotation along the X-axis */
+    const xRotation = -10 * ((yVal - height / 2) / height);
+    const string =
+      "perspective(500px) scale(1.01) rotateX(" +
+      xRotation +
+      "deg) rotateY(" +
+      yRotation +
+      "deg)";
+
+    code.style.transform = string;
+  }
+  code.addEventListener("mouseout", function () {
+    code.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+  });
+}
+
+function other3d() {
+  let other = document.getElementById("other");
+
+  const height = other.clientHeight;
+  const width = other.clientWidth;
+
+  other.addEventListener("mousemove", handleMove);
+
+  function handleMove(e) {
+    /* Store the x position */
+    const xVal = e.layerX;
+    /* Store the y position */
+    const yVal = e.layerY;
+
+    const yRotation = 10 * ((xVal - width / 2) / width);
+
+    /* Calculate the rotation along the X-axis */
+    const xRotation = -10 * ((yVal - height / 2) / height);
+    const string =
+      "perspective(500px) scale(1.01) rotateX(" +
+      xRotation +
+      "deg) rotateY(" +
+      yRotation +
+      "deg)";
+
+    other.style.transform = string;
+  }
+  other.addEventListener("mouseout", function () {
+    other.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+  });
+}
+
+function learn3d() {
+  let learn = document.getElementById("learning");
+
+  const height = learn.clientHeight;
+  const width = learn.clientWidth;
+
+  learn.addEventListener("mousemove", handleMove);
+
+  function handleMove(e) {
+    /* Store the x position */
+    const xVal = e.layerX;
+    /* Store the y position */
+    const yVal = e.layerY;
+
+    const yRotation = 5 * ((xVal - width / 2) / width);
+
+    /* Calculate the rotation along the X-axis */
+    const xRotation = -5 * ((yVal - height / 2) / height);
+    const string =
+      "perspective(500px) scale(1.01) rotateX(" +
+      xRotation +
+      "deg) rotateY(" +
+      yRotation +
+      "deg)";
+
+    learn.style.transform = string;
+  }
+  learn.addEventListener("mouseout", function () {
+    learn.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+  });
+}
+
+function insta3d() {
+  let insta = document.getElementById("insta");
+
+  const height = insta.clientHeight;
+  const width = insta.clientWidth;
+
+  insta.addEventListener("mousemove", handleMove);
+
+  function handleMove(e) {
+    /* Store the x position */
+    const xVal = e.layerX;
+    /* Store the y position */
+    const yVal = e.layerY;
+
+    const yRotation = 10 * ((xVal - width / 2) / width);
+
+    /* Calculate the rotation along the X-axis */
+    const xRotation = -10 * ((yVal - height / 2) / height);
+    const string =
+      "perspective(500px) scale(1.01) rotateX(" +
+      xRotation +
+      "deg) rotateY(" +
+      yRotation +
+      "deg)";
+
+    insta.style.transform = string;
+  }
+  insta.addEventListener("mouseout", function () {
+    insta.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+  });
+}

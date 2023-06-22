@@ -1,51 +1,49 @@
 #projects {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-evenly;
   width: 100%;
   height: auto;
-  background: var(--white);
-  border-bottom: 2px solid var(--orange);
+  margin: 2em 0;
 }
-#projects h2 {
-  color: var(--orange);
-}
-.gallery-container {
-  width: 100vw;
+#projects .gallery-container {
+  width: 100%;
   height: auto;
   display: flex;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
-  flex-flow: column nowrap;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .secondContainer {
   height: 60vh;
-  width: 100%;
-  margin: 2% 0;
+  width: 95%;
   display: flex;
   align-items: flex-start;
   overflow-y: hidden;
-  border-radius: 15px;
+  margin: 5% 0;
 }
-.tech_container {
+#tech_container {
   width: 100%;
   height: 100%;
   display: flex;
   flex-grow: 1;
   align-items: center;
   justify-content: space-evenly;
+  transition: cubic-bezier(0.79, 0.14, 0.15, 0.86) 0.8s;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 18, 18, 0) 0%,
+    rgba(18, 18, 18, 1) 100%
+  );
+
+  border-radius: 15px;
 }
-.html,
-.css,
-.js,
-.react,
-.node,
-.discord {
+#projects .html,
+#projects .css,
+#projects .js,
+#projects .react,
+#projects .node,
+#projects .discord {
   width: 4em;
   height: 4em;
-  border-radius: 50%;
 }
 .mongo {
   width: 4em;
@@ -59,6 +57,7 @@
 }
 .js {
   background: url(../assets/img/icons/js.png) no-repeat center/contain;
+  border-radius: 50%;
 }
 .react {
   background: url(../assets/img/icons/react.png) no-repeat center/contain;
@@ -73,10 +72,10 @@
   background: url(../assets/img/icons/mongo.png) no-repeat center/contain;
 }
 .snippet-container {
+  position: relative;
   height: 100%;
   width: 60%;
   cursor: pointer;
-  transition: cubic-bezier(0.79, 0.14, 0.15, 0.86) 0.8s;
 }
 .first-snippet-img {
   width: 100%;
@@ -102,92 +101,57 @@
   display: flex;
   align-items: flex-end;
 }
-.first-snippet-img h3,
-.second-snippet-img h3,
-.third-snippet-img h3 {
+#projects h3 {
   color: var(--white);
-  font-weight: lighter;
-  margin: 50px;
   font-size: 2vw;
+  margin: 0;
+  padding: 0;
 }
 .first-snippet-text,
 .second-snippet-text,
 .third-snippet-text {
   width: 40%;
   height: 100%;
-  color: var(--background);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
 }
-.secondContainer h2 {
-  font-size: 2em;
-  font-weight: bold;
-}
 #projects h4 {
-  width: 50%;
+  width: 75%;
   text-align: justify;
   font-size: 1.8em;
   font-weight: 300;
 }
 #projects h4 span {
-  color: var(--orange);
+  color: var(--blue);
+  font-family: "Poppins-Light";
 }
 #projects h6 {
   font-size: 1em;
   font-weight: 300;
 }
-.snippet-container:hover {
+.snippet-container:hover #tech_container {
   transform: translateY(-100%);
 }
 #projects a {
   text-decoration: none;
-  font-size: 1.2em;
-  color: var(--orange);
+  font-size: 1.5em;
+  color: var(--blue);
+  font-family: "Poppins-Light";
   transition: 0.4s;
 }
 #projects a:hover {
   transform: scale(1.05);
-  border-bottom: 1px solid var(--orange);
+  border-bottom: 1px solid var(--blue);
 }
 .third-snippet-text a:hover {
   cursor: not-allowed;
 }
 
-/* Eclipse style */
-
-.eclipse {
-  position: absolute;
-  width: 35em;
-  height: 35em;
-  background: var(--background);
-  border-radius: 50%;
-}
-
-.eclipse:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  border-bottom: 0 solid #ffffff05;
-  box-shadow: 0 -10px 20px 20px #ffffff40 inset,
-    0 -5px 15px 10px #ffffff50 inset, 0 -2px 5px #ffffff80 inset,
-    0 -3px 2px var(--yellow) inset, 0 2px 0px var(--yellow),
-    0 2px 3px var(--yellow), 0 5px 5px #ffffff90, 0 10px 15px #ffffff60,
-    0 10px 20px 20px #ffffff40;
-  filter: opacity(0.25) blur(5px);
-  animation: 2s rotate linear infinite;
-}
-
 /* Responsive */
 
-@media screen and (max-width: 1200px) {
-  #projects h4 {
-    font-size: 1.5em;
-  }
-}
 @media screen and (max-width: 950px) {
   #projects {
     flex-flow: column nowrap;
@@ -199,6 +163,22 @@
     align-items: center;
     width: 100%;
     height: 100vh;
+  }
+  #tech_container {
+    position: absolute;
+    top: 0;
+  }
+  .snippet-container:hover #tech_container {
+    transform: translate(0);
+  }
+  .html,
+  .css,
+  .js,
+  .react,
+  .node,
+  .discord {
+    width: 2em;
+    height: 2em;
   }
   .first-snippet-text,
   .second-snippet-text,
@@ -213,5 +193,6 @@
   #projects h4 {
     text-align: justify;
     width: 75%;
+    font-size: 1.5em;
   }
 }

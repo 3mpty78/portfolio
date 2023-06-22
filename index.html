@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="icon" href="./assets/img/icons/directeur.png" />
+    <link rel="icon" href="./assets/img/memoji_2.png" />
     <title>CORRE Aurélien</title>
   </head>
   <body>
@@ -18,85 +18,84 @@
     <main>
       <!-- Hamburger toggler -->
 
-      <button class="nav-toggler">
+      <header class="header">
+        <nav>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About me</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="nav-toggler">
         <span class="line l1"></span>
         <span class="line l2"></span>
         <span class="line l3"></span>
-      </button>
-
-      <!-- Home screen -->
-
-      <section id="menu">
-        <header class="header">
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#profil">About me</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#experience">Studies & Experience</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
+      </div>
+      <div id="home">
         <section class="bounce">
           <div class="rebond_1"></div>
           <div class="rebond_2"></div>
           <div class="rebond_3"></div>
         </section>
-        <div class="main-title">
-          <h1>
-            CORRE <br />
-            <span>Aurélien</span>
-          </h1>
+
+        <div class="homeScreen">
+          <h1>CORRE <span>Aurélien</span></h1>
+          <p>Web development <span>student</span>.</p>
+          <img src="./assets/img/memoji_2.png" alt="" />
         </div>
-      </section>
+      </div>
 
       <!-- About me -->
 
-      <section id="profil">
-        <h2>Who am I ?</h2>
-        <div class="picture_container">
-          <div class="about_picture"></div>
-        </div>
-        <p>
-          Hello ! My name is Aurelien, I'm 26 and I'm passionate about
-          <span>IT, development</span> and <span>tattooing</span>. Three areas
-          that I'd like to link through a project for tattoo artists and
-          tattooed people.<br />
-          I am <span>self-taught</span> about web development for the moment but
-          i'm looking for a training! <br />
-          My goal is to specialize in <span>front-end</span> development.
-          <br />I want to <span>retrain</span> in IT and more specifically in
-          <span>web development</span> after 6 years spent as a policeman.
-          <br />
-          I'm therefore looking for a company that can take me on for a 2-year
-          <span>apprenticeship contract</span>.<br />
-        </p>
-      </section>
+      <div id="about">
+        <section class="aboutMe">
+          <img src="./assets/img/memoji.PNG" alt="" />
+          <p class="description">
+            Hello !👋
+            <br />
+            I'm Aurélien, 26 years old and passionate about
+            <span> IT </span> and <span>development</span> . I am
+            <span>self-taught</span> about web development actually, but I'm
+            looking for an apprenticeship. My goal is to specialize in
+            <span>front-end</span> development.
+          </p>
+        </section>
+      </div>
 
       <!-- Personnal projects -->
 
-      <section id="projects">
-        <h2>Projects</h2>
-
+      <div id="projects">
+        <div class="title-container">
+          <h2>Some of my work</h2>
+        </div>
         <section class="gallery-container">
           <div class="secondContainer">
             <div class="first-snippet-text">
-              <h2>BAUDIC Taxis</h2>
+              <h3>BAUDIC Taxis</h3>
               <h4>
                 Taxi booking website that I've done for my father's friend's
                 taxi company based in <span>Plouzane, France</span>.
               </h4>
-              <a href="https://3mpty78.github.io/Baudic-taxis/" target="_blank"
-                >Visit website</a
-              >
+              <a href="https://3mpty78.github.io/Baudic-taxis/" target="_blank">
+                Visit website
+              </a>
             </div>
             <div class="snippet-container">
-              <div class="first-snippet-img img">
-                <h3>BAUDIC Taxis</h3>
-              </div>
-              <div class="tech_container">
+              <div class="first-snippet-img img"></div>
+              <div id="tech_container">
                 <div class="html"></div>
                 <div class="css"></div>
                 <div class="js"></div>
@@ -105,23 +104,20 @@
           </div>
           <div class="secondContainer">
             <div class="second-snippet-text">
-              <h2>Blindtester</h2>
+              <h3>Blindtester</h3>
               <h4>
                 This is a <span>Discord bot</span> we can use to play a
                 Blindtest game. I created this bot with the
-                <span>discord.js</span> module from <span>Node.js</span>. This
-                bot is available in So La Lune's Discord server, a french
-                rapper.
+                <span>discord.js</span> module from <span>Node.js</span>. I made
+                this bot for "So La Lune's" Discord server, a french rapper.
               </h4>
-              <a href="https://github.com/3mpty78/Blindtester" target="_blank"
-                >Look at source code</a
-              >
+              <a href="https://github.com/3mpty78/Blindtester" target="_blank">
+                Look at source code
+              </a>
             </div>
             <div class="snippet-container">
-              <div class="second-snippet-img img">
-                <h3>Blindtester</h3>
-              </div>
-              <div class="tech_container">
+              <div class="second-snippet-img img"></div>
+              <div id="tech_container">
                 <div class="node"></div>
                 <div class="discord"></div>
                 <div class="mongo"></div>
@@ -130,20 +126,19 @@
           </div>
           <div class="secondContainer">
             <div class="third-snippet-text">
-              <h2>Tattoo Roulette</h2>
+              <h3>Tattoo Roulette</h3>
               <h4>
                 Tattoo Roulette is going to be a website where you'll find
                 <span>tattoo advices</span> and where you'll be able to get a
                 <span>random design</span> based on your
-                <span>favorite</span> tattoo styles.
+                <span>favorite</span> tattoo styles, in
+                <span>collaboration</span> with tattoo artists.
               </h4>
               <a>Not available</a>
             </div>
             <div class="snippet-container">
-              <div class="third-snippet-img img">
-                <h3>Tattoo Roulette</h3>
-              </div>
-              <div class="tech_container">
+              <div class="third-snippet-img img"></div>
+              <div id="tech_container">
                 <div class="html"></div>
                 <div class="css"></div>
                 <div class="js"></div>
@@ -152,83 +147,69 @@
             </div>
           </div>
         </section>
-      </section>
-
-      <!-- Studies and Professionnal Experience -->
-
-      <section id="experience">
-        <h2>Studies & Experience</h2>
-        <div class="card">
-          <div class="school">
-            <img src="./assets/img/icons/diplome.png" alt="Diploma icon" />
-            <h3>2014 - 2016</h3>
-            <h4>BEP & BAC Pro</h4>
-            <p>Natural Environments and Wildlife Management</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="versailles">
-            <img
-              src="./assets/img/icons/mallette.png"
-              alt="Professionnal Experience icon" />
-            <h3>2016 - 2022</h3>
-            <h4>Gendarmerie Nationale</h4>
-            <p>📍Versailles (78) / Maison-Alfort (94)</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="solo">
-            <img src="./assets/img/icons/diplome.png" alt="Diploma icon" />
-            <h3>2022 - 2023</h3>
-            <h4>Self learning</h4>
-            <p>HTML - CSS - JavaScript - Git</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="solo">
-            <img
-              src="./assets/img/icons/mallette.png"
-              alt="Professionnal Experience icon" />
-            <h3>2023 (1 week internship)</h3>
-            <h4>
-              <a href="https://lacapsule.org/" target="_blank">La Capsule</a>
-            </h4>
-            <p>📍Morlaix (29)</p>
-          </div>
-        </div>
-      </section>
+      </div>
 
       <!-- Skills -->
 
       <section id="skills">
-        <h2>Skills</h2>
-
-        <!-- Blob animation -->
-        <div class="blob">
-          <div class="lil_blob"></div>
+        <div class="title-container">
+          <h2>My skills</h2>
         </div>
-        <div class="blob_2">
-          <div class="lil_blob_2"></div>
-        </div>
-
-        <!-- Skills -->
-        <div class="skills-container">
-          <div class="tools">
-            <h3>Things I know</h3>
-            <div class="gridContainer">
-              <div class="techno"></div>
-              <div class="techno"></div>
-              <div class="techno"></div>
+        <div class="tech-container">
+          <div id="design" class="design skills" onmouseenter="{design3d()}">
+            <h3>Design</h3>
+            <div class="skillBox">
+              <span class="canva skill"></span>
+              <h4>Canva</h4>
+            </div>
+            <div class="skillBox">
+              <span class="photoshop skill"></span>
+              <h4>Photoshop</h4>
+            </div>
+            <div class="skillBox">
+              <span class="illustrator skill"></span>
+              <h4>Illustrator</h4>
             </div>
           </div>
-          <div class="tools learning">
-            <h3>Things I learn</h3>
-            <div class="gridContainer">
-              <div class="techno"></div>
-              <div class="techno"></div>
-              <div class="techno"></div>
-              <div class="techno"></div>
-              <div class="techno"></div>
+          <div id="code" class="code skills" onmouseenter="{code3d()}">
+            <h3>Web development</h3>
+            <div class="skillBox">
+              <span class="html skill"></span>
+              <h4>HTML</h4>
+            </div>
+            <div class="skillBox">
+              <span class="css skill"></span>
+              <h4>CSS</h4>
+            </div>
+            <div class="skillBox">
+              <span class="js skill"></span>
+              <h4>Javascript</h4>
+            </div>
+          </div>
+          <div id="other" class="other skills" onmouseenter="{other3d()}">
+            <h3>Other</h3>
+            <div class="skillBox">
+              <span class="github skill"></span>
+              <h4>GitHub</h4>
+            </div>
+          </div>
+          <div id="learning" class="learn skills" onmouseenter="{learn3d()}">
+            <h3>Learning ...</h3>
+            <div class="skillBox">
+              <span class="react skill"></span>
+              <h4>React</h4>
+            </div>
+            <div class="skillBox">
+              <span class="python skill"></span>
+              <h4>Python</h4>
+            </div>
+            <div class="skillBox">
+              <span class="node skill"></span>
+              <h4>Node.js</h4>
+            </div>
+            <div class="skillBox">
+              <span class="php skill"></span>
+              <h4>PhP</h4>
             </div>
           </div>
         </div>
@@ -237,52 +218,41 @@
       <!-- Contact section -->
 
       <section id="contact">
-        <!-- <div class="circles circle"></div>
-        <div class="circles circle_2"></div>
-        <div class="circles circle_3"></div> -->
-        <h2>Contact me</h2>
-
-        <!-- Instagram card -->
-
-        <div class="cards">
-          <i></i>
-          <a href="https://www.instagram.com/cursed_aure/" target="_blank"
-            >Follow me</a
-          >
+        <div class="title-container">
+          <h2>Contact me</h2>
         </div>
-
-        <!-- Links to contact -->
-
         <div class="contact-container">
-          <div class="contact">
-            <div class="slide email">
-              <i></i>
-              <div class="slash"></div>
-              <a href="mailto:aurelien..corre@outlook.fr">Email</a>
+          <div class="blob">
+            <div class="lil_blob"></div>
+          </div>
+          <div class="blob_2">
+            <div class="lil_blob_2"></div>
+          </div>
+          <div id="insta" class="instaCard" onmouseenter="{insta3d()}">
+            <div class="profilPicture"></div>
+            <button class="follow">
+              <a href="https://www.instagram.com/cursed_aure/" target="_blank">
+                Follow me !
+              </a>
+            </button>
+          </div>
+          <div class="links">
+            <div class="githubButton">
+              <span class="github"></span>
+              <a href="https://github.com/3mpty78" target="_blank"> Github </a>
             </div>
-            <div class="slide tel">
-              <i></i>
-              <div class="slash"></div>
-              <a href="tel:+33659920450">Tel</a>
-            </div>
-            <div class="slide github">
-              <i></i>
-              <div class="slash"></div>
-              <a href="https://github.com/3mpty78" target="_blank">GitHub</a>
-            </div>
-            <div class="slide linkedin">
-              <i></i>
-              <div class="slash"></div>
+            <div class="linkedinButton">
+              <span class="linkedin"></span>
               <a
                 href="https://www.linkedin.com/in/aurelien-corre-a229461b3/"
-                target="_blank"
-                >Linkedin</a
-              >
+                target="_blank">
+                Linkedin
+              </a>
             </div>
-          </div>
-          <div class="slide-toggle-container">
-            <span class="slide-toggle prev"></span>
-            <span class="slide-toggle next"></span>
+            <div class="emailButton">
+              <span class="email"></span>
+              <a href="mailto:aurelien.corre@outlook.fr">Email</a>
+            </div>
           </div>
         </div>
       </section>
