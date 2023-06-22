@@ -120,4 +120,7 @@ header li:hover {
   header a {
     font-size: 2em;
   }
+  .nav-toggler {
+    top: 1.5%;
+  }
 }

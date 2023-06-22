@@ -173,6 +173,7 @@ button:hover a {
   }
   .links {
     width: 75%;
+    backdrop-filter: none;
   }
   .instaCard {
     width: 75%;
@@ -194,5 +195,17 @@ button:hover a {
   .lil_blob_2 {
     width: 20vw;
     height: 20vw;
+  }
+  .links span {
+    filter: none;
+  }
+  .links a {
+    color: var(--background);
+  }
+  .githubButton,
+  .linkedinButton,
+  .emailButton {
+    backdrop-filter: none;
+    background: var(--blue);
   }
 }

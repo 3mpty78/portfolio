@@ -188,6 +188,9 @@ h2 {
 /* Responsive */
 
 @media screen and (max-width: 950px) {
+  main {
+    height: auto;
+  }
   h1 {
     font-size: 15vw;
   }
@@ -198,8 +201,11 @@ h2 {
     width: 35vw;
     z-index: -1;
   }
+  .title-container {
+    background: var(--background);
+  }
   h2 {
-    font-size: 1.8em;
+    font-size: 2.2em;
   }
   .homeScreen p {
     font-size: 5vw;

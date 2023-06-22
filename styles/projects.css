@@ -195,4 +195,7 @@
     width: 75%;
     font-size: 1.5em;
   }
+  #projects h3 {
+    font-size: 6vw;
+  }
 }
