@@ -66,6 +66,7 @@ main {
   height: 100vh;
   margin: 0 auto;
   text-align: center;
+  background: var(--background);
 }
 * {
   user-select: none;
