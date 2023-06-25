@@ -71,3 +71,21 @@
     transform: rotate(360deg);
   }
 }
+
+/* Loader */
+
+@keyframes load {
+  0% {
+    color: var(--blue);
+    text-shadow: 0 0 30px #080808;
+  }
+  90% {
+    color: var(--background);
+    opacity: 0;
+    text-shadow: none;
+  }
+  100% {
+    color: var(--blue);
+    text-shadow: 0 0 30px #080808;
+  }
+}
