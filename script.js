@@ -3,7 +3,7 @@
 let loader = document.getElementById("loader");
 
 window.addEventListener("load", () => {
-  loader.style.display = "none";
+  // loader.style.display = "none";
 });
 
 // Hamburger navigation toggler

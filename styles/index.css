@@ -107,6 +107,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 6vw;
   letter-spacing: 15px;
   animation: load 1.5s linear infinite;
+  transition: all 0.4s;
 }
 .letter:nth-child(1) {
   animation-delay: 0.1s;
